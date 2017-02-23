@@ -1,0 +1,118 @@
+hash: e82ffad3489e451cc3af18f31d3497cc93394790943119e6b23324a573b71fb0
+updated: 2017-02-22T19:46:04.825156595+01:00
+imports:
+- name: github.com/coreos/go-iptables
+  version: 5463fbac3bcc6b990663941c2e12660d19f6b36d
+  subpackages:
+  - iptables
+- name: github.com/daaku/go.zipexe
+  version: a5fe2436ffcb3236e175e5149162b41cd28bd27d
+- name: github.com/docker/distribution
+  version: 954b4e8154815e0b7c8ac7d73504046a0dbae281
+  subpackages:
+  - digestset
+  - reference
+- name: github.com/docker/engine-api
+  version: 4290f40c056686fcaa5c9caf02eac1dde9315adf
+  subpackages:
+  - client
+  - client/transport
+  - client/transport/cancellable
+  - types
+  - types/blkiodev
+  - types/container
+  - types/filters
+  - types/mount
+  - types/network
+  - types/reference
+  - types/registry
+  - types/strslice
+  - types/swarm
+  - types/time
+  - types/versions
+- name: github.com/docker/go-connections
+  version: eb315e36415380e7c2fdee175262560ff42359da
+  subpackages:
+  - nat
+  - sockets
+  - tlsconfig
+- name: github.com/docker/go-units
+  version: e30f1e79f3cd72542f2026ceec18d3bd67ab859c
+- name: github.com/docopt/docopt-go
+  version: 784ddc588536785e7299f7272f39101f7faccc3f
+- name: github.com/GeertJohan/go.rice
+  version: 4bbccbfa39e784796e483270451217d3369ecfbe
+  subpackages:
+  - embedded
+- name: github.com/google/gopacket
+  version: b83f94714c36e30ce851be1d5a0a5226f9f1bca4
+  subpackages:
+  - layers
+  - pcap
+- name: github.com/gorilla/context
+  version: 08b5f424b9271eedf6f9f0ce86cb9396ed337a42
+- name: github.com/gorilla/mux
+  version: 392c28fe23e1c45ddba891b0320b3b5df220beea
+- name: github.com/kardianos/osext
+  version: 9b883c5eb462dd5cb1b0a7a104fe86bc6b9bd391
+- name: github.com/kung-foo/freki
+  version: b8cdce0aabd6d6aa3552467ebf83f5dafdf9d51c
+  subpackages:
+  - netfilter
+- name: github.com/miekg/dns
+  version: 0b729df06cb29cf7a3ff59b876e9a2ecb7fac2b1
+- name: github.com/opencontainers/go-digest
+  version: 21dfd564fd89c944783d00d069f33e3e7123c448
+- name: github.com/phyber/negroni-gzip
+  version: 13f05ed68248e012fcc773ecd829abcc0bb3abd8
+  subpackages:
+  - gzip
+- name: github.com/pkg/errors
+  version: 645ef00459ed84a119197bfb8d8205042c6df63d
+- name: github.com/rs/cors
+  version: a62a804a8a009876ca59105f7899938a1349f4b3
+- name: github.com/rs/xhandler
+  version: ed27b6fd65218132ee50cd95f38474a3d8a2cd12
+- name: github.com/Sirupsen/logrus
+  version: c078b1e43f58d563c74cebe63c85789e76ddb627
+- name: github.com/soheilhy/cmux
+  version: bf4a8ede9e87c006fe1d4278c6c7f2b8be1fa84c
+- name: github.com/urfave/negroni
+  version: fde5e16d32adc7ad637e9cd9ad21d4ebc6192535
+- name: github.com/xenolf/lego
+  version: 6cac0ea7d8b28c889f709ec7fa92e92b82f490dd
+  subpackages:
+  - acme
+- name: golang.org/x/crypto
+  version: 453249f01cfeb54c3d549ddb75ff152ca243f9d8
+  subpackages:
+  - ocsp
+- name: golang.org/x/net
+  version: 6b27048ae5e6ad1ef927e72e437531493de612fe
+  subpackages:
+  - bpf
+  - context
+  - http2
+  - http2/hpack
+  - idna
+  - lex/httplex
+  - proxy
+  - publicsuffix
+- name: golang.org/x/sys
+  version: 075e574b89e4c2d22f2286a7e2b919519c6f3547
+  subpackages:
+  - unix
+- name: golang.org/x/time
+  version: f51c12702a4d776e4c1fa9b0fabab841babae631
+  subpackages:
+  - rate
+- name: gopkg.in/square/go-jose.v1
+  version: aa2e30fdd1fe9dd3394119af66451ae790d50e0d
+  subpackages:
+  - cipher
+  - json
+- name: gopkg.in/yaml.v2
+  version: a5b47d31c556af34a302ce5d659e6fea44d90de0
+- name: rsc.io/letsencrypt
+  version: 76104d26167d38b6a0010f42bfc8ec5487742e8b
+testImports: []

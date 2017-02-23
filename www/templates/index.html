@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="/static/css/main.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
+  <script>
+    $(function() {
+      var ports = [2, 22, 25, 80, 443, 3306, 6379, 9200];
+
+      $.ajaxSetup({
+        timeout: 5000
+      });
+
+      $.each(ports, function(index, port) {
+        $("#scan_results").append("<div >Port " + port + ": <span id=\"port_" + port + "\" /></div>");
+      });
+
+      $.each(ports, function(index, port) {
+        var el = $("#port_" + port);
+
+        $.get("//" + window.location.hostname + ":" + port + "/cors.json" )
+          .done(function() {
+            el.addClass("happy").text("✓");
+          })
+          .fail(function() {
+            el.addClass("sad").text("☼");
+          });
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <p>Hello on port {{.Port}}!</p>
+
+    <p>Request: Address: {{.RemoteAddr}} User Agent: {{.UserAgent}}
+    </p>
+
+    <div id="scan_results"></div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <span class="text-muted">Powered by <a href="https://github.com/kung-foo/freki">freki</a> &#x263A;</span>
+    </div>
+  </footer>
+</body>
+
+</html>

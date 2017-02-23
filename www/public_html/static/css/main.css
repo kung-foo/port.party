@@ -1,0 +1,42 @@
+@font-face {
+    font-family: 'IBMVGA8';
+    src: url(/static/fonts/ibm_vga8.eot);
+    src: url(/static/fonts/ibm_vga8.eot?#iefix) format('embedded-opentype'), url(/static/fonts/ibm_vga8.woff2) format('woff2'), url(/static/fonts/ibm_vga8.woff) format('woff'), url(/static/fonts/ibm_vga8.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    font-family: "IBMVGA8", monospace;
+    color: white;
+    margin-bottom: 25px;
+    background-color: #223344;
+}
+
+body p {
+    white-space: pre;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 25px;
+    line-height: 25px;
+    /* Vertically center the text there */
+    background-color: #f5f5f5;
+}
+
+.happy {
+    color: lime;
+}
+
+.sad {
+    color: red;
+}
