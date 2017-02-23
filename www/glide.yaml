@@ -1,0 +1,25 @@
+package: github.com/kung-foo/port.party/www
+ignore:
+- github.com/Microsoft/go-winio
+import:
+- package: github.com/kung-foo/freki
+  version: ^1.0.4
+- package: github.com/Sirupsen/logrus
+  version: ^0.11.0
+- package: github.com/docopt/docopt-go
+  version: ^0.6.2
+- package: github.com/gorilla/mux
+  version: ^1.3.0
+- package: github.com/urfave/negroni
+- package: rsc.io/letsencrypt
+- package: golang.org/x/time
+  subpackages:
+  - rate
+- package: github.com/rs/cors
+  version: ^1.0.0
+- package: github.com/phyber/negroni-gzip
+- package: github.com/soheilhy/cmux
+  version: ^0.1.2
+- package: github.com/GeertJohan/go.rice
+  subpackages:
+  - embedded
